@@ -67,13 +67,7 @@ app.get("/success",function(req,res){
 })
 
 app.post("/failure", function (req, res) {
-    var button1 = req.body.button
-
-    if (button1 == 'home') {
-        res.redirect("/")
-    }else (button1 == 'success'); {
-        res.redirect("/success")
-    }
+    res.redirect("/")
 })
 
 
